@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+label:nth-child(3) {
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+.checkbtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .active {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+
+    .lkjhljh:checked ~ ul {
+        animation-name: open;
+        animation-duration: 0.5s;
+        top: 5rem;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background: #0082e6;
+        top: -16rem;
+        z-index: -1;
+        transition: 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    @keyframes open {
+        from {
+            top: -16rem;
+        } to {
+            top: 5rem;
+        }
+    }
+
+    @keyframes close {
+        from {
+            top: 5rem;
+        } to {
+            top: -16rem;
+        }
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+}
