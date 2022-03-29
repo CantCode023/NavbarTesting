@@ -8,5 +8,5 @@
     <h1>Mobile</h1>
     <img src="https://cdn.discordapp.com/attachments/782968691767640085/958234407301414922/unknown.png">
     <br><br>
-    <p>Try it out now! Click <a href="https://cantcode023.github.io/NavbarTesting" target="_blank">here</a></p>
+    <p>Try it out <a href="https://cantcode023.github.io/NavbarTesting" target="_blank">here!</a></p>
 </div>

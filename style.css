@@ -55,6 +55,14 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
+    label:nth-child(3) {
+        color: #fff;
+        font-size: 20px;
+        line-height: 80px;
+        padding: 0 50px;
+        font-weight: bold;
+    }
+
     .active {
         display: none;
     }
